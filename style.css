@@ -1,0 +1,65 @@
+@font-face {
+    font-family:"Inter"; src: url("./material/Inter.ttf");
+}
+
+body {
+    font-family: Inter;
+    margin-left: 20px;
+}
+
+main {
+    max-width: 1000px;
+    font-family: Inter;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+#left {
+    display: flex;
+    gap: 10px;
+}
+
+#right {
+    display: flex;
+    gap: 20px;
+}
+
+.vs {
+    padding-left: 3px;
+    padding-bottom: 2px;
+}
+
+.right-style {
+    font-size: 17px;
+    font-weight: 450;
+}
+
+.left-style {
+   font-size: 17px; 
+   font-weight: 450;
+}
+
+#barky-box {
+    color: white;
+    background-color: black;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 8px;
+}
+
+#Barky {
+    width: 110px;
+    height: auto;
+    gap: 20px;
+    padding-right: 15px;
+}
