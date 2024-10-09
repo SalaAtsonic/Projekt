@@ -4,33 +4,35 @@
 
 body {
     font-family: Inter;
-    margin-left: 20px;
-}
-
-main {
-    max-width: 1000px;
-    font-family: Inter;
 }
 
 nav {
     display: flex;
     align-items: center;
-    gap: 20px;
     justify-content: space-between;
     position: relative;
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 5px;
     padding-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-a {
+#Barky {
+    width: 110px;
+    height: auto;
+    padding-right: 15px;
+}
+
+.header-links {
     text-decoration: none;
     color: black;
 }
 
 #left {
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    align-items: center;
 }
 
 #right {
@@ -63,14 +65,50 @@ a {
     color: white;
     background-color: black;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 14px;
     margin: 8px;
 }
 
-#Barky {
-    width: 110px;
+main {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-1 {
+    display: flex;
+    margin: 100px auto;
+}
+#teams-hero {
+    width: 100%;
     height: auto;
-    gap: 20px;
-    padding-right: 15px;
+}
+
+#left-2 {
+    flex-basis: 50%;
+}
+#right-2 {
+    flex-basis: 50%;
+}
+
+p {
+    width: 83%;
+    color: #999999;
+    padding-bottom: 10px;
+}
+
+#heading-1 {
+    width: 90%;
+    font-size: 50px;
+    margin: 0;
+}
+
+#barky-box-2 {
+    color: white;
+    background-color: black;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-decoration: none;
 }
