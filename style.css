@@ -12,7 +12,7 @@ main {
     font-family: Inter;
 }
 
-header {
+nav {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -23,6 +23,11 @@ header {
     padding-right: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 #left {
     display: flex;
     gap: 10px;
@@ -31,6 +36,12 @@ header {
 #right {
     display: flex;
     gap: 20px;
+    align-items: center;
+}
+
+#line-between {
+    border-right: 1px solid #e5e5e5;
+    padding-right: 10px;
 }
 
 .vs {
@@ -44,7 +55,7 @@ header {
 }
 
 .left-style {
-   font-size: 17px; 
+   font-size: 16px; 
    font-weight: 450;
 }
 
