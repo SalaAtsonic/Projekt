@@ -76,7 +76,7 @@ main {
     margin-right: auto;
 }
 
-#main-1 {
+#hero-main {
     display: flex;
     margin: 100px auto;
 }
@@ -85,26 +85,29 @@ main {
     height: auto;
 }
 
-#left-2 {
+#hero-left {
     flex-basis: 50%;
 }
-#right-2 {
+#hero-right {
     flex-basis: 50%;
 }
 
-p {
+#hero-text {
     width: 83%;
-    color: #999999;
     padding-bottom: 10px;
 }
 
-#heading-1 {
+p {
+    color: #999999;
+}
+
+#hero-heading {
     width: 90%;
     font-size: 50px;
     margin: 0;
 }
 
-#barky-box-2 {
+#hero-barky-box {
     color: white;
     background-color: black;
     padding: 8px;
