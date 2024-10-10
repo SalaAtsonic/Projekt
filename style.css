@@ -12,12 +12,16 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 5px;
     padding-right: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #Barky {
@@ -82,7 +86,8 @@ main {
 
 #hero-main {
     display: flex;
-    margin: 100px auto;
+    margin: 100px 0px 60px;
+    align-items: center;
 }
 #teams-hero {
     width: 100%;
