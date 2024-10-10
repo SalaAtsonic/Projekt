@@ -6,6 +6,8 @@ body {
     font-family: Inter;
 }
 
+/*Header*/
+
 nav {
     display: flex;
     align-items: center;
@@ -70,6 +72,8 @@ nav {
     margin: 8px;
 }
 
+/*Hero Page*/
+
 main {
     max-width: 1000px;
     margin-left: auto;
@@ -114,4 +118,32 @@ p {
     border-radius: 3px;
     font-size: 14px;
     text-decoration: none;
+}
+
+/*Logos company*/
+
+.logos-company {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;;
+}
+
+#top-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+#bottom-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 20px 20px 20px;
+}
+
+.image-logo {
+    width: 10%;
+    height: auto;
 }
