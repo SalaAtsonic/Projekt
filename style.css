@@ -74,6 +74,7 @@ nav {
     border-radius: 3px;
     font-size: 14px;
     margin: 8px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /*Hero Page*/
@@ -86,7 +87,7 @@ main {
 
 #hero-main {
     display: flex;
-    margin: 100px 0px 60px;
+    margin: 130px 0px 60px;
     align-items: center;
 }
 #teams-hero {
@@ -108,6 +109,7 @@ main {
 
 p {
     color: #999999;
+    line-height: 1.5;
 }
 
 #hero-heading {
@@ -121,8 +123,8 @@ p {
     background-color: black;
     padding: 8px;
     border-radius: 3px;
-    font-size: 14px;
     text-decoration: none;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /*Logos company*/
@@ -152,3 +154,56 @@ p {
     width: 10%;
     height: auto;
 }
+
+#page-dog {
+
+}
+
+.pages {
+
+}
+
+.header-dog {
+    font-size: 30px;
+    margin: 60px 0px -6px 0px;
+}
+
+.text-dog {
+    width: 49%;
+    margin-bottom: 40px;
+}
+
+.image-dog {
+    width: 100%;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+.quotes {
+    text-align: center;
+    font-weight: 600;
+    margin: 30px 60px 30px;
+}
+
+.faces {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .face-image {
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
+  }
+  
+  .face-text .name {
+    font-size: 16px; 
+    font-weight: bold; 
+  }
+  
+  .face-text .title {
+    font-size: 14px;  
+    margin-top: -20px;
+  }
