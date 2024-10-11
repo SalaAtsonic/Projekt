@@ -118,7 +118,7 @@ p {
     margin: 0;
 }
 
-#hero-barky-box {
+.hero-barky-box {
     color: white;
     background-color: black;
     padding: 8px;
@@ -155,13 +155,7 @@ p {
     height: auto;
 }
 
-#page-dog {
-
-}
-
-.pages {
-
-}
+/*Dog page*/
 
 .header-dog {
     font-size: 30px;
@@ -176,14 +170,15 @@ p {
 .image-dog {
     width: 100%;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
-    padding-top: 5px;
+    padding: 5px;
     border-radius: 5px;
 }
 
 .quotes {
     text-align: center;
     font-weight: 600;
-    margin: 30px 60px 30px;
+    margin: 30px 60px 0px 30px;
+    color: #999999
 }
 
 .faces {
