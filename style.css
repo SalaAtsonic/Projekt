@@ -131,7 +131,7 @@ p {
 
 .logos-company {
     border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 #top-logos {
@@ -204,3 +204,61 @@ p {
   }
 
 /*The Plan page*/
+#plan {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 100px;
+}
+
+.plam-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+}
+
+#list {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 100px;
+}
+
+.plan-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 90px 0px 0px;
+}
+
+#heading-plan {
+    font-size: 40px;
+    margin: 0;
+}
+
+#text-plan {
+    text-align: center;
+}
+
+.plan-bottom {
+    width: 99%;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.feature-row {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 0; 
+    border-bottom: 1px solid #e5e5e5; 
+}
+
+.cecks {
+    width: 20px; 
+}
+
+#none-bottom {
+    border-bottom: none;
+}
