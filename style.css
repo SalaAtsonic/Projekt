@@ -147,18 +147,21 @@ p {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 10px 20px 20px 20px;
+    padding: 25px 20px 20px 20px;
 }
 
 .image-logo {
-    width: 10%;
-    height: auto;
+    height: 25px;
 }
 
 /*Dog page*/
 
+#page-dog {
+    padding-top: 10px;
+}
+
 .header-dog {
-    font-size: 30px;
+    font-size: 36px;
     margin: 60px 0px -6px 0px;
 }
 
@@ -176,9 +179,10 @@ p {
 
 .quotes {
     text-align: center;
-    font-weight: 600;
-    margin: 30px 60px 0px 30px;
-    color: #999999
+    font-weight: 550;
+    margin: 30px 30px 0px 30px;
+    color: #999999;
+    font-size: 36px;
 }
 
 .faces {
@@ -207,7 +211,7 @@ p {
 #plan {
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
-    margin-top: 100px;
+    margin-top: 66px;
 }
 
 .plam-top {
@@ -221,7 +225,8 @@ p {
     background-color: #f4f4f4;
     padding: 30px;
     border-radius: 5px;
-    margin: 100px;
+    margin: 55px auto 80px;
+    width: 60%;
 }
 
 .plan-top {
@@ -233,7 +238,7 @@ p {
 }
 
 #heading-plan {
-    font-size: 40px;
+    font-size: 36px;
     margin: 0;
 }
 
@@ -250,8 +255,7 @@ p {
 .feature-row {
     display: flex; 
     justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 0; 
+    align-items: center;  
     border-bottom: 1px solid #e5e5e5; 
 }
 
@@ -261,4 +265,38 @@ p {
 
 #none-bottom {
     border-bottom: none;
+}
+
+/*Page solve*/
+
+#solve {
+    padding-top: 40px;
+}
+
+.solve-top {
+    text-align: center;
+}
+
+.solve-text {
+    font-size: 14px;
+    margin-top: -13px;
+}
+
+.list-order {
+    display: flex;
+}
+
+#list-two {
+    border-left: 1px solid #e5e5e5; 
+    border-right: 1px solid #e5e5e5; 
+}
+
+#list-one, #list-two, #list-three {
+    text-align: center;
+    padding: 0 40px;
+    flex-basis: 100%;
+}
+
+.list-link {
+    color: black;
 }
