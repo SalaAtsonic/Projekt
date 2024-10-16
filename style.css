@@ -363,7 +363,65 @@ p {
     margin: -10px 0 20px;
 }
 
-footer {
-    max-width: 1200px;
+/*footer page*/
+
+#line {
     border-top: 1px solid #e5e5e5;
+    max-width: none;
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    padding: 40px 0;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+#left-footer {
+    flex-basis: 30%; 
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+#barky-2 {
+    width: 140px; 
+    margin-bottom: 20px;
+}
+
+.media {
+    margin-right: 5px;
+    height: 20px;
+}
+
+#bottom-footer {
+    margin-top: 60px;
+    font-size: 12px;
+    width: 70%;
+}
+
+#rest-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 65%; 
+}
+
+.info {
+    margin-right: 30px; 
+}
+
+.info h6 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.info p {
+    margin: 5px 0;
+    color: #666666; 
+    font-size: 14px;
+}
+
+#bottom-footer p {
+    color: black;
 }
