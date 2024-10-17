@@ -1,24 +1,45 @@
+
+:root {
+    /* Font Sizes */
+    --small-font-size: 12px;
+    --medium-font-size: 14px;
+    --large-font-size: 15px;
+    --larger-font-size: 26px;
+    --heading-large: 36px;
+    --heading-super-large: 53px;
+
+    /* Colors */
+    --white-color: #ffffff;
+    --black-color: #050505;
+    --gray-dark: #666666;
+    --gray-light: #999999;
+    --border-color: #e5e5e5;
+    --background-light: #f4f4f4;
+}
+
+/* Font face */
 @font-face {
-    font-family:"Inter"; src: url("./material/Inter.ttf");
+    font-family:"Inter"; 
+    src: url("./material/Inter.ttf");
 }
 
-body {
+html, body {
     font-family: Inter;
+    overflow-x: hidden;
 }
 
-/*Header*/
-
+/* Header */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 5px;
     padding-right: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    background-color: white;
+    background-color: var(--white-color);
     top: 0;
     left: 0;
     right: 0;
@@ -32,7 +53,7 @@ nav {
 
 .header-links {
     text-decoration: none;
-    color: black;
+    color: var(--black-color);
 }
 
 #left {
@@ -48,7 +69,7 @@ nav {
 }
 
 #line-between {
-    border-right: 1px solid #e5e5e5;
+    border-right: 1px solid var(--border-color);
     height: 20px;
 }
 
@@ -57,28 +78,23 @@ nav {
     padding-bottom: 2px;
 }
 
-.right-style {
-    font-size: 17px;
-    font-weight: 450;
-}
-
-.left-style {
-   font-size: 16px; 
-   font-weight: 450;
-}
-
 #barky-box {
-    color: white;
-    background-color: black;
+    color: var(--white-color);
+    background-color: var(--black-color);
     padding: 8px;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: var(--medium-font-size);
     margin: 8px;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
 }
 
-/*Hero Page*/
+#hamburger {
+    display: none;
+    width: 20px;
+}
 
+/* Hero Page */
 main {
     max-width: 1000px;
     margin-left: auto;
@@ -90,48 +106,49 @@ main {
     margin: 130px 0px 60px;
     align-items: center;
 }
+
 #teams-hero {
     width: 100%;
     height: auto;
 }
 
 #hero-left {
-    flex-basis: 50%;
+    flex-basis: 0;
+    flex-grow: 1;
 }
+
 #hero-right {
-    flex-basis: 50%;
+    flex-basis: 0;
+    flex-grow: 1;
 }
 
 #hero-text {
-    width: 83%;
     padding-bottom: 10px;
 }
 
 p {
-    color: #999999;
+    color: var(--gray-light);
     line-height: 1.5;
 }
 
 #hero-heading {
-    width: 90%;
-    font-size: 50px;
+    font-size: var(--heading-super-large);
     margin: 0;
 }
 
 .hero-barky-box {
-    color: white;
-    background-color: black;
+    color: var(--white-color);
+    background-color: var(--black-color);
     padding: 8px;
     border-radius: 3px;
     text-decoration: none;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/*Logos company*/
-
+/* Logos company */
 .logos-company {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 #top-logos {
@@ -154,14 +171,13 @@ p {
     height: 25px;
 }
 
-/*Dog page*/
-
+/* Dog page */
 #page-dog {
     padding-top: 10px;
 }
 
 .header-dog {
-    font-size: 36px;
+    font-size: var(--heading-large);
     margin: 60px 0px -6px 0px;
 }
 
@@ -181,36 +197,36 @@ p {
     text-align: center;
     font-weight: 550;
     margin: 30px 30px 0px 30px;
-    color: #999999;
-    font-size: 36px;
+    color: var(--gray-light);
+    font-size: var(--heading-large);
 }
 
 .faces {
     display: flex; 
     align-items: center;
     justify-content: center;
-  }
-  
-  .face-image {
-    width: 50px; 
-    height: auto; 
-    margin-right: 10px; 
-  }
-  
-  .face-text .name {
-    font-size: 16px; 
-    font-weight: bold; 
-  }
-  
-  .face-text .title {
-    font-size: 14px;  
-    margin-top: -20px;
-  }
+}
 
-/*The Plan page*/
+.face-image {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.face-text .name {
+    font-size: var(--large-font-size);
+    font-weight: bold;
+}
+
+.face-text .title {
+    font-size: var(--medium-font-size);
+    margin-top: -20px;
+}
+
+/* The Plan page */
 #plan {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
     margin-top: 66px;
 }
 
@@ -222,7 +238,7 @@ p {
 }
 
 #list {
-    background-color: #f4f4f4;
+    background-color: var(--background-light);
     padding: 30px;
     border-radius: 5px;
     margin: 55px auto 80px;
@@ -238,7 +254,7 @@ p {
 }
 
 #heading-plan {
-    font-size: 36px;
+    font-size: var(--heading-large);
     margin: 0;
 }
 
@@ -253,22 +269,21 @@ p {
 }
 
 .feature-row {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;  
-    border-bottom: 1px solid #e5e5e5; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .cecks {
-    width: 20px; 
+    width: 20px;
 }
 
 #none-bottom {
     border-bottom: none;
 }
 
-/*Page solve*/
-
+/* Page solve */
 #solve {
     padding-top: 40px;
 }
@@ -278,7 +293,7 @@ p {
 }
 
 .solve-text {
-    font-size: 14px;
+    font-size: var(--medium-font-size);
     margin-top: -13px;
 }
 
@@ -287,8 +302,8 @@ p {
 }
 
 #list-two {
-    border-left: 1px solid #e5e5e5; 
-    border-right: 1px solid #e5e5e5; 
+    border-left: 1px solid var(--border-color); 
+    border-right: 1px solid var(--border-color); 
 }
 
 #list-one, #list-two, #list-three {
@@ -298,11 +313,10 @@ p {
 }
 
 .list-link {
-    color: black;
+    color: var(--black-color);
 }
 
-/*Rates page*/
-
+/* Rates page */
 .leader {
     display: flex;
     justify-content: space-between;
@@ -314,13 +328,13 @@ p {
 }
 
 .rate-style {
-    color: black;
+    color: var(--black-color);
     margin-top: -10px;
-    font-size: 15px;
+    font-size: var(--medium-font-size);
 }
 
 #badges {
-    width: 46%
+    width: 46%;
 }
 
 .rate-text {
@@ -330,7 +344,7 @@ p {
 }
 
 #heading-rate {
-    font-size: 26;
+    font-size: var(--larger-font-size);
 }
 
 .procent {
@@ -340,17 +354,16 @@ p {
 
 #rate-one, #rate-two, #rate-three, #rate-four {
     text-align: center;
-    
 }
 
 .line-between {
-    border-right: 1px solid #e5e5e5;
+    border-right: 1px solid var(--border-color);
     margin: 15px 0px;
 }
 
 .procent-heading {
-    font-size: 53px;
-    color: #666666;
+    font-size: var(--heading-super-large);
+    color: var(--gray-dark);
     margin: 32px 0 -12px 0;
 }
 
@@ -363,10 +376,9 @@ p {
     margin: -10px 0 20px;
 }
 
-/*footer page*/
-
+/* Footer page */
 #line {
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid var(--border-color);
     max-width: none;
     margin: 10px;
 }
@@ -397,7 +409,7 @@ footer {
 
 #bottom-footer {
     margin-top: 60px;
-    font-size: 12px;
+    font-size: var(--small-font-size);
     width: 70%;
 }
 
@@ -413,15 +425,85 @@ footer {
 
 .info h6 {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: var(--medium-font-size);
 }
 
 .info p {
     margin: 5px 0;
-    color: #666666; 
-    font-size: 14px;
+    color: var(--gray-dark); 
+    font-size: var(--medium-font-size);
 }
 
 #bottom-footer p {
-    color: black;
+    color: var(--black-color);
 }
+
+@media (max-width: 1080px){
+
+    .header-links {
+        display: none;
+    }
+
+    nav {
+        height: 50px;
+    }
+
+    #hamburger {
+        display: inline;
+        padding: 5px
+    }
+    
+    #right {
+        margin-left: auto;
+    }
+    
+    #hero-main {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    #teams-hero {
+        width: 50%; 
+    }
+
+    #hero-text {
+        padding: 10px 230px;
+    }
+
+    .list-order{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; 
+        padding: 20px;
+        text-align: center; 
+    }
+
+    #list-two {
+        border-left:none;
+        border-right:none;
+    }
+
+    .list-link {
+        margin-top: 10px; 
+    }
+
+    .procent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .line-between {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    #rest-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 60px;
+    }
+}
+
